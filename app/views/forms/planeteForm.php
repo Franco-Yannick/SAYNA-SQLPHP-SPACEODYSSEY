@@ -1,46 +1,58 @@
 <?php
 // Incluez le fichier en utilisant le chemin absolu
+$pathAllmin = /*realpath(__DIR__ . */'../../../www/plugins/fontawesome-free/css/all.min.css'/*)*/;
+$pathAdminlte = /*realpath(__DIR__ . */'../../../www/dist/css/adminlte.min.css'/*)*/;
+
 include '../header.php';
+
+require_once('../../models/vaisseaux.php');
 ?>
-       <h1>Liste des Planètes</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- jquery validation -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Ajouter Planete<!--<small>jQuery Validation</small>--></h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form id="quickForm" novalidate="novalidate" method="POST" action="../../controllers/missionController.php">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Planete:</label>
+                    <input type="text" name="nomMission" class="form-control" id="exampleInputEmail1" placeholder="Entre le nom">
+                  </div>
 
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Circonference:</label>
+                    <input type="text" name="objectifMission" class="form-control" id="exampleInputEmail1" placeholder="L'objectif du mission">
+                  </div>
 
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Distance à la terre:</label>
+                    <input type="text" name="objectifMission" class="form-control" id="exampleInputEmail1" placeholder="L'objectif du mission">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+            </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
 
-<h2>Ajouter une nouvelle planète</h2>
-<form action="add_planet.php" method="post">
-    <label for="name">Nom de la planète:</label>
-    <input type="text" name="name" required>
-
-    <label for="circumference">Circonférence (en km):</label>
-    <input type="number" name="circumference" required>
-
-    <label for="distance">Distance à la Terre (en km):</label>
-    <input type="number" name="distance" required>
-
-    <label for="documentation">Documentation:</label>
-    <textarea name="documentation" rows="4" required></textarea>
-
-    <button type="submit">Ajouter la planète</button>
-</form>
-
-    
-
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
     <!-- terminer ici-->
-    <?php
-     function getAllPlanets() {
-      global $conn;
-      $sql = "SELECT * FROM planete";
-      $result = $conn->query($sql);
-      
-      if ($result->num_rows > 0) {
-          return $result->fetch_all(MYSQLI_ASSOC);
-      } else {
-          return [];
-      }
-  }
-  
-    ?> 
-    
 
 </body>
 </html>
