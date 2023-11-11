@@ -1,0 +1,33 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"stellar_tech"},
+{"type":"table","name":"astronautes","database":"stellar_tech","data":
+[
+{"id":"1","nom":"Franco","prenom":"Yannick","nationalite":"Malagasy","annee_service":"1","etat_sante":"Bon","taille":"180","poids":"80","mission_id":"1","date_naissance":"2000-02-01 00:00:00"}
+]
+}
+,{"type":"table","name":"missions","database":"stellar_tech","data":
+[
+{"id":"1","nom":"SpaceZ","objectif":"explorer le planete K56","date_debut":"2023-11-11 00:00:00","date_fin":"2024-12-20 00:00:00","status_mission":"debut","cout":null,"vaisseau_id":"2","planete_id":null},
+{"id":"2","nom":"SpaceY","objectif":"explorer le planete TN64","date_debut":"2022-07-09 00:00:00","date_fin":"2024-01-18 00:00:00","status_mission":"encours","cout":null,"vaisseau_id":"1","planete_id":null},
+{"id":"3","nom":"ExploR","objectif":"explorer la planete 56K43","date_debut":"2010-11-08 00:00:00","date_fin":"2012-10-16 00:00:00","status_mission":"abandonne","cout":null,"vaisseau_id":"1","planete_id":null},
+{"id":"4","nom":"FLYW","objectif":"explorer la planet KP2787J","date_debut":"2021-06-09 00:00:00","date_fin":"2022-09-13 00:00:00","status_mission":"fini","cout":null,"vaisseau_id":"3","planete_id":null},
+{"id":"5","nom":"FLYW","objectif":"explorer la planet KP2787J","date_debut":"2021-06-09 00:00:00","date_fin":"2022-09-13 00:00:00","status_mission":"fini","cout":null,"vaisseau_id":"3","planete_id":null},
+{"id":"14","nom":"Heavy","objectif":"explorer la planete V67K43","date_debut":"2023-11-22 00:00:00","date_fin":"2024-12-11 00:00:00","status_mission":"Début","cout":null,"vaisseau_id":"2","planete_id":null},
+{"id":"15","nom":"LIGHT","objectif":"explorer la planete V67K43","date_debut":"2023-11-22 00:00:00","date_fin":"2024-12-11 00:00:00","status_mission":"Début","cout":null,"vaisseau_id":"3","planete_id":null},
+{"id":"19","nom":"INTERNWZ","objectif":"explorer la planete 67HJ32","date_debut":"2023-11-11 00:00:00","date_fin":"2024-11-11 00:00:00","status_mission":"Début","cout":null,"vaisseau_id":"1","planete_id":null},
+{"id":"20","nom":"INTERNWZ","objectif":"explorer la planete 67HJ32","date_debut":"2023-11-11 00:00:00","date_fin":"2024-11-11 00:00:00","status_mission":"Début","cout":null,"vaisseau_id":"1","planete_id":null},
+{"id":"21","nom":"INTERNWZ","objectif":"explorer la planete 67HJ32","date_debut":"2023-11-11 00:00:00","date_fin":"2024-11-11 00:00:00","status_mission":"Début","cout":null,"vaisseau_id":"1","planete_id":null}
+]
+}
+,{"type":"table","name":"planetes","database":"stellar_tech","data":
+[
+
+]
+}
+,{"type":"table","name":"vaisseaux","database":"stellar_tech","data":
+[
+
+]
+}
+]
